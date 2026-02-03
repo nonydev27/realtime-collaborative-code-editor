@@ -6,7 +6,7 @@ export default function LandingPage() {
 
      const [isOpen, setIsOpen] = useState(false);
 
-      const handleSubmit = (e) => {
+    const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Registered via Headless UI!");
     setIsOpen(false);
@@ -34,6 +34,7 @@ export default function LandingPage() {
                 </p>
                 
                 <button 
+                    onClick={() => setIsOpen(true)}
                     className="mt-8 px-8 py-3 m-2 bg-sky-600 font-bold transition-transform hover:scale-105 capitalize"
                 >
                     open editor
