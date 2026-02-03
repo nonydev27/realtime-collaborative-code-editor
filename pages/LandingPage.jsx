@@ -30,7 +30,7 @@ export default function LandingPage() {
                 </button>
 
                      <button 
-                    className="mt-8 px-8 py-3 m-2 font-bold transition-transform hover:scale-105 capitalize opacity-80"
+                    className="mt-8 px-8 py-3 m-2 font-bold transition-transform hover:scale-105 hover:opacity-100 capitalize opacity-80"
                     style={{ backgroundColor: 'var(--primary)', color: 'white' }}
                 >
                    create document
