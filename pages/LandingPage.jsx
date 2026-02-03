@@ -1,4 +1,4 @@
-import {motion} from "framer-motion";
+import {animate, motion} from "framer-motion";
 
 export default function LandingPage() {
     return (
@@ -6,6 +6,8 @@ export default function LandingPage() {
         <motion.div 
             className="flex min-h-screen items-center justify-center p-10" 
             style={{ backgroundColor: 'var(--bg-main)', color: 'var(--tertiary)' }}
+            initial={{}}
+            animate={{}}
 
         >
             <div className="text-center max-w-2xl">
