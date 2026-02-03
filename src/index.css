@@ -9,7 +9,7 @@ body {
 }
 :root{
     --bg-main: #323643;
-    --primary: #F7F7F7 ;
-    --secondary: #606470;
-    --tertiary: #93DEFF;
+    --white: #F7F7F7 ;
+    --dark: #606470;
+    --blue: #93DEFF;
 }

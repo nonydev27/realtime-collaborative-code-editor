@@ -14,7 +14,7 @@ export default function LandingPage() {
             <div className="text-center max-w-2xl">
                 <h1 
                     className="text-6xl font-black mb-4" 
-                    style={{ color: 'var(--primary)' }}
+                    style={{ color: 'var(--white)' }}
                 >
                     WordFlow
                 </h1>
@@ -25,14 +25,14 @@ export default function LandingPage() {
                 
                 <button 
                     className="mt-8 px-8 py-3 m-2 font-bold transition-transform hover:scale-105 capitalize"
-                    style={{ backgroundColor: 'var(--primary)', color: 'white' }}
+                    style={{ backgroundColor: 'var(--blue)', color: 'white' }}
                 >
                     open editor
                 </button>
 
                      <button 
-                    className="mt-8 px-8 py-3 m-2 font-bold transition-transform hover:scale-105 hover:opacity-100 capitalize opacity-80"
-                    style={{ backgroundColor: 'var(--primary)', color: 'white' }}
+                    className="mt-8 px-8 py-3 m-2 bg-sky-600  font-bold transition-transform hover:scale-105 hover:opacity-100 capitalize opacity-80"
+
                 >
                    create document
                 </button>
