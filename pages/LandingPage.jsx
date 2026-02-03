@@ -2,11 +2,11 @@ import {motion} from "framer-motion";
 
 export default function LandingPage() {
     return (
-        /* Use 'style' for the CSS variable, 'className' for the layout */
+        /* Using 'style' for the CSS variable, and 'className' for the layout */
         <motion.div 
             className="flex min-h-screen items-center justify-center p-10" 
             style={{ backgroundColor: 'var(--bg-main)', color: 'var(--tertiary)' }}
-            
+
         >
             <div className="text-center max-w-2xl">
                 <h1 
