@@ -47,6 +47,83 @@ export default function LandingPage() {
                 >
                    create document
                 </button>
+
+
+                {/* 2. HEADLESS UI DIALOG */}
+      <Transition appear show={isOpen} as={Fragment}>
+        <Dialog as="div" className="relative z-50" onClose={() => setIsOpen(false)}>
+          
+          {/* Backdrop: Automatically handles the dimmed background */}
+          <Transition.Child
+            as={Fragment}
+            enter="ease-out duration-300"
+            enterFrom="opacity-0"
+            enterTo="opacity-100"
+            leave="ease-in duration-200"
+            leaveFrom="opacity-100"
+            leaveTo="opacity-0"
+          >
+            <div className="fixed inset-0 bg-black/80 backdrop-blur-sm" />
+          </Transition.Child>
+
+          <div className="fixed inset-0 overflow-y-auto">
+            <div className="flex min-h-full items-center justify-center p-4">
+              
+              <Transition.Child
+                as={Fragment}
+                enter="ease-out duration-300"
+                enterFrom="opacity-0 scale-95"
+                enterTo="opacity-100 scale-100"
+                leave="ease-in duration-200"
+                leaveFrom="opacity-100 scale-100"
+                leaveTo="opacity-0 scale-95"
+              >
+                <Dialog.Panel className="w-full max-w-sm bg-[#241b35] border border-white/10 p-8 rounded-2xl shadow-2xl">
+                  
+                  <Dialog.Title as="h2" className="text-2xl font-bold mb-2 text-[#a5f3fc]">
+                    Sign Up
+                  </Dialog.Title>
+                  <p className="text-gray-400 text-sm mb-6">
+                    Join WordFlow to sync your ideas in real-time.
+                  </p>
+                  
+                  <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+                    <input 
+                      type="email" 
+                      placeholder="Email" 
+                      className="p-3 rounded bg-[#1a1528] border border-white/10 outline-none focus:ring-2 focus:ring-[#6366f1] text-white"
+                      required 
+                    />
+                    <input 
+                      type="password" 
+                      placeholder="Password" 
+                      className="p-3 rounded bg-[#1a1528] border border-white/10 outline-none focus:ring-2 focus:ring-[#6366f1] text-white"
+                      required 
+                    />
+                    
+                    <div className="flex gap-2 mt-4">
+                      <button 
+                        type="button"
+                        onClick={() => setIsOpen(false)}
+                        className="flex-1 p-3 text-gray-400 hover:text-white transition-colors"
+                      >
+                        Cancel
+                      </button>
+                      <button 
+                        type="submit"
+                        className="flex-[2] bg-[#6366f1] p-3 rounded font-bold hover:bg-[#4f46e5] transition-all"
+                      >
+                        Register
+                      </button>
+                    </div>
+                  </form>
+                </Dialog.Panel>
+              </Transition.Child>
+            </div>
+          </div>
+        </Dialog>
+      </Transition>
+
             </div>
 
 
