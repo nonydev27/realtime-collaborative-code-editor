@@ -51,11 +51,6 @@ To handle rapid-fire keystrokes from 5+ users without lag:
 
 ---
 
-## 📸 Visuals & Animations
-
-
-
-> **Tip:** Use a GIF here to show the "Smooth Cursor Movement" animation you've implemented!
 
 ---
 
