@@ -1,4 +1,6 @@
 import {animate, motion} from "framer-motion";
+import React, { useState, Fragment } from 'react';
+import { Dialog, Transition } from '@headlessui/react';
 
 export default function LandingPage() {
 
