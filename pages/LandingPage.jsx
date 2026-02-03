@@ -26,9 +26,19 @@ export default function LandingPage() {
                     className="mt-8 px-8 py-3 rounded-full font-bold transition-transform hover:scale-105"
                     style={{ backgroundColor: 'var(--primary)', color: 'white' }}
                 >
-                    Start Flowing
+                    Get WordFlow
+                </button>
+
+                     <button 
+                    className="mt-8 px-8 py-3 font-bold transition-transform hover:scale-105"
+                    style={{ backgroundColor: 'var(--primary)', color: 'white' }}
+                >
+                    Request a Demo
                 </button>
             </div>
+
+
+         
         </motion.div>
     );
 }
