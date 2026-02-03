@@ -1,5 +1,5 @@
 # REALTIME COLLABORATIVE CODE EDITOR
-This project features my mentor [Agyare Kelvin](https://github.com/KelvCodes target="_blank")
+This project features my mentor [Agyare Kelvin](https://github.com/KelvCodes")
 
 Apparently, this project aims at developing a web app similar to that of Notion but differently.
 
