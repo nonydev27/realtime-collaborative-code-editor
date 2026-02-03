@@ -6,6 +6,7 @@ export default function LandingPage() {
         <motion.div 
             className="flex min-h-screen items-center justify-center p-10" 
             style={{ backgroundColor: 'var(--bg-main)', color: 'var(--tertiary)' }}
+            
         >
             <div className="text-center max-w-2xl">
                 <h1 
