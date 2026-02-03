@@ -8,7 +8,7 @@
   [![Socket.io](https://img.shields.io/badge/Socket.io-010101?style=for-the-badge&logo=socket.io&logoColor=white)](https://socket.io/)
   [![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)](https://www.framer.com/motion/)
 
-  [View Demo](#) • [Report Bug](https://github.com/yourusername/project/issues) • [Request Feature](https://github.com/yourusername/project/issues)
+  <!-- [View Demo](#) • [Report Bug](https://github.com/yourusername/project/issues) • [Request Feature](https://github.com/yourusername/project/issues) -->
 </div>
 
 ---
