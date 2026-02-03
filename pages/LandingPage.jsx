@@ -26,7 +26,7 @@ export default function LandingPage() {
                     className="mt-8 px-8 py-3 m-2 font-bold transition-transform hover:scale-105"
                     style={{ backgroundColor: 'var(--primary)', color: 'white' }}
                 >
-                    Get WordFlow
+                    open editor
                 </button>
 
                      <button 
