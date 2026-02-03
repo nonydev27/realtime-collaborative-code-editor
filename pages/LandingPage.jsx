@@ -63,7 +63,7 @@ export default function LandingPage() {
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <div className="fixed inset-0 bg-black/80 backdrop-blur-sm" />
+            <div className="fixed inset-1 bg-[#323643]/50 backdrop-blur-xs" />
           </Transition.Child>
 
           <div className="fixed inset-0 overflow-y-auto">
@@ -88,6 +88,13 @@ export default function LandingPage() {
                   </p>
                   
                   <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+                    <input 
+                      type="text" 
+                      placeholder="Fullname" 
+                      className="p-3 rounded bg-[#1a1528] border border-white/10 outline-none focus:ring-2 focus:ring-[#6366f1] text-white"
+                      required 
+                    />
+
                     <input 
                       type="email" 
                       placeholder="Email" 
