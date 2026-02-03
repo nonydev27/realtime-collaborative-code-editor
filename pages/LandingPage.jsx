@@ -41,6 +41,7 @@ export default function LandingPage() {
                 </button>
 
                      <button 
+                     onClick={() => setIsOpen(true)}
                     className="mt-8 px-8 py-3 m-2 bg-sky-600 font-bold transition-transform hover:scale-105 hover:opacity-100 capitalize"
 
                 >
