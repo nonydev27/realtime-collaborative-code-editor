@@ -51,9 +51,6 @@ To handle rapid-fire keystrokes from 5+ users without lag:
 
 ---
 
-
----
-
 ## 🧠 Engineering Trade-offs
 
 <details>
