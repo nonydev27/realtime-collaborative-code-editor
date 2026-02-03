@@ -14,38 +14,80 @@ export default function LandingPage() {
     
        return (
 
-        <>/* Using 'style' for the CSS variable, and 'className' for the layout */
+        <>
 
+      {/* --- IMMERSIVE BACKGROUND ANIMATION LAYER --- */}
+      <div className="absolute inset-0 pointer-events-none select-none">
+        
+        {/* Subtle Grid Overlay */}
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:40px_40px]" />
 
-            {/* --- NOTION-STYLE BACKGROUND ANIMATION --- */}
-      <div className="absolute inset-0 pointer-events-none opacity-20 select-none">
-        <div className="max-w-4xl mx-auto pt-20 px-10">
-          {/* Simulated Document Lines */}
-          <div className="space-y-6">
-            <div className="h-8 bg-[#6366f1] rounded w-3/4 animate-pulse opacity-20" />
-            <div className="h-4 bg-white/10 rounded w-full" />
-            <div className="h-4 bg-white/10 rounded w-5/6" />
-            
-            {/* The "Active" Typing Line */}
-            <div className="flex items-center space-x-2">
-              <div className="h-4 bg-[#a3e635] rounded animate-[typing_3s_steps(30)_infinite] overflow-hidden whitespace-nowrap border-r-2 border-[#a5f3fc]">
-                <span className="invisible">Engineering the future of collaborative document synchronization...</span>
+        {/* Floating Particles/Stars */}
+        <div className="absolute inset-0 overflow-hidden">
+          {[...Array(20)].map((_, i) => (
+            <div 
+              key={i}
+              className="absolute w-1 h-1 bg-white rounded-full opacity-20 animate-pulse"
+              style={{
+                top: `${Math.random() * 100}%`,
+                left: `${Math.random() * 100}%`,
+                animationDelay: `${Math.random() * 5}s`,
+                animationDuration: `${3 + Math.random() * 4}s`
+              }}
+            />
+          ))}
+        </div>
+
+        {/* Content Skeleton / Notion-style lines */}
+        <div className="max-w-6xl mx-auto pt-10 px-10 opacity-10">
+          <div className="space-y-8">
+            {/* Header Section */}
+            <div className="flex items-center space-x-4">
+              <div className="w-12 h-12 rounded-full bg-[#6366f1]/20" />
+              <div className="h-6 bg-[#6366f1] rounded w-1/4" />
+            </div>
+
+            <div className="space-y-4">
+              <div className="h-4 bg-white/10 rounded w-full" />
+              <div className="h-4 bg-white/10 rounded w-11/12" />
+              <div className="h-4 bg-white/10 rounded w-10/12" />
+            </div>
+
+            {/* Active Typing Block 1 */}
+            <div className="flex items-center space-x-2 py-4">
+              <div className="h-5 bg-[#a3e635]/40 rounded animate-[typing_5s_steps(40)_infinite] overflow-hidden whitespace-nowrap border-r-2 border-[#a5f3fc]">
+                <span className="invisible">Initiating real-time socket connection for collaborative document engineering...</span>
               </div>
             </div>
 
-            <div className="h-4 bg-white/10 rounded w-4/6" />
-            <div className="h-4 bg-white/10 rounded w-full" />
-            <div className="h-4 bg-white/10 rounded w-2/3" />
+            <div className="space-y-4">
+              <div className="h-4 bg-white/10 rounded w-full" />
+              <div className="h-4 bg-white/10 rounded w-full" />
+            </div>
+
+            {/* Active Typing Block 2 */}
+            <div className="flex items-center space-x-2 py-4 ml-10">
+              <div className="h-5 bg-[#6366f1]/40 rounded animate-[typing_4s_steps(35)_infinite_1s] overflow-hidden whitespace-nowrap border-r-2 border-[#a5f3fc]">
+                <span className="invisible">Syncing document state with distributed edge clusters...</span>
+              </div>
+            </div>
+
+            <div className="space-y-4">
+              <div className="h-4 bg-white/10 rounded w-3/4" />
+              <div className="h-4 bg-white/10 rounded w-1/2" />
+            </div>
             
-            {/* More pulse lines */}
-            <div className="h-4 bg-white/5 rounded w-5/6 animate-pulse" />
-            <div className="h-4 bg-white/5 rounded w-4/6 animate-pulse delay-75" />
+            {/* More lines for full-page coverage */}
+            {[...Array(10)].map((_, i) => (
+              <div key={i} className={`h-4 bg-white/5 rounded w-${Math.floor(Math.random() * 4 + 8)}/12 animate-pulse`} style={{ animationDelay: `${i * 0.2}s` }} />
+            ))}
           </div>
         </div>
 
-        {/* Floating Decorative Elements */}
-        <div className="absolute top-1/4 right-10 w-64 h-64 bg-[#6366f1]/10 rounded-full blur-3xl animate-blob" />
-        <div className="absolute bottom-1/4 left-10 w-64 h-64 bg-[#a3e635]/5 rounded-full blur-3xl animate-blob animation-delay-2000" />
+        {/* Large Floating Gradient Blobs */}
+        <div className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-[#6366f1]/15 rounded-full blur-[120px] animate-blob" />
+        <div className="absolute bottom-[-10%] right-[-10%] w-[600px] h-[600px] bg-[#a3e635]/10 rounded-full blur-[120px] animate-blob animation-delay-2000" />
+        <div className="absolute top-[40%] right-[20%] w-[300px] h-[300px] bg-purple-500/10 rounded-full blur-[100px] animate-blob animation-delay-4000" />
       </div>
         <motion.div 
             className="flex min-h-screen items-center justify-center p-10" 
