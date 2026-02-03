@@ -4,6 +4,13 @@ import { Dialog, Transition } from '@headlessui/react';
 
 export default function LandingPage() {
 
+     const [isOpen, setIsOpen] = useState(false);
+
+      const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Registered via Headless UI!");
+    setIsOpen(false);
+  };
     
        return (
         /* Using 'style' for the CSS variable, and 'className' for the layout */
