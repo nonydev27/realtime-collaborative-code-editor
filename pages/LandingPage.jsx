@@ -1,8 +1,11 @@
 import {animate, motion} from "framer-motion";
-import {Button} from "@headlessui/react";
+import {useState} from 'react';
+
 
 export default function LandingPage() {
-    return (
+
+    
+       return (
         /* Using 'style' for the CSS variable, and 'className' for the layout */
         <motion.div 
             className="flex min-h-screen items-center justify-center p-10" 
@@ -18,7 +21,7 @@ export default function LandingPage() {
                 >
                     WordFlow
                 </h1>
-                <p className="text-xl opacity-90 leading-relaxed font-mono">
+                <p className="text-xl opacity-90 leading-relaxed foplease the ront-mono">
                     Where ideas synchronize in real-time. A high-performance 
                     collaborative workspace designed for seamless document engineering.
                 </p>
