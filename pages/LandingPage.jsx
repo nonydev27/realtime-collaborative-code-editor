@@ -78,9 +78,9 @@ export default function LandingPage() {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="w-full max-w-sm bg-[#241b35] border border-white/10 p-8 rounded-2xl shadow-2xl">
+                <Dialog.Panel className="w-full max-w-sm bg-[#323643] border border-white/20 p-8 rounded-2xl shadow-2xl">
                   
-                  <Dialog.Title as="h2" className="text-2xl font-bold mb-2 text-[#a5f3fc]">
+                  <Dialog.Title as="h2" className="text-2xl font-bold mb-2 text-[#93deff]">
                     Sign Up
                   </Dialog.Title>
                   <p className="text-gray-400 text-sm mb-6">
@@ -118,7 +118,7 @@ export default function LandingPage() {
                       </button>
                       <button 
                         type="submit"
-                        className="flex-[2] bg-[#6366f1] p-3 rounded font-bold hover:bg-[#4f46e5] transition-all"
+                        className="flex-[2] bg-sky-600 p-3 rounded font-bold hover:bg-[#4f46e5] transition-all"
                       >
                         Register
                       </button>
