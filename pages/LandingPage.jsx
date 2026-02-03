@@ -13,7 +13,40 @@ export default function LandingPage() {
   };
     
        return (
-        /* Using 'style' for the CSS variable, and 'className' for the layout */
+
+        <>/* Using 'style' for the CSS variable, and 'className' for the layout */
+
+
+            {/* --- NOTION-STYLE BACKGROUND ANIMATION --- */}
+      <div className="absolute inset-0 pointer-events-none opacity-20 select-none">
+        <div className="max-w-4xl mx-auto pt-20 px-10">
+          {/* Simulated Document Lines */}
+          <div className="space-y-6">
+            <div className="h-8 bg-[#6366f1] rounded w-3/4 animate-pulse opacity-20" />
+            <div className="h-4 bg-white/10 rounded w-full" />
+            <div className="h-4 bg-white/10 rounded w-5/6" />
+            
+            {/* The "Active" Typing Line */}
+            <div className="flex items-center space-x-2">
+              <div className="h-4 bg-[#a3e635] rounded animate-[typing_3s_steps(30)_infinite] overflow-hidden whitespace-nowrap border-r-2 border-[#a5f3fc]">
+                <span className="invisible">Engineering the future of collaborative document synchronization...</span>
+              </div>
+            </div>
+
+            <div className="h-4 bg-white/10 rounded w-4/6" />
+            <div className="h-4 bg-white/10 rounded w-full" />
+            <div className="h-4 bg-white/10 rounded w-2/3" />
+            
+            {/* More pulse lines */}
+            <div className="h-4 bg-white/5 rounded w-5/6 animate-pulse" />
+            <div className="h-4 bg-white/5 rounded w-4/6 animate-pulse delay-75" />
+          </div>
+        </div>
+
+        {/* Floating Decorative Elements */}
+        <div className="absolute top-1/4 right-10 w-64 h-64 bg-[#6366f1]/10 rounded-full blur-3xl animate-blob" />
+        <div className="absolute bottom-1/4 left-10 w-64 h-64 bg-[#a3e635]/5 rounded-full blur-3xl animate-blob animation-delay-2000" />
+      </div>
         <motion.div 
             className="flex min-h-screen items-center justify-center p-10" 
             style={{ backgroundColor: 'var(--bg-main)', color: 'var(--tertiary)' }}
@@ -131,10 +164,33 @@ export default function LandingPage() {
         </Dialog>
       </Transition>
 
+       {/* Custom Keyframes for the Typing Animation */}
+      <style>{`
+        @keyframes typing {
+          from { width: 0 }
+          to { width: 100% }
+        }
+        @keyframes blob {
+          0% { transform: translate(0px, 0px) scale(1); }
+          33% { transform: translate(30px, -50px) scale(1.1); }
+          66% { transform: translate(-20px, 20px) scale(0.9); }
+          100% { transform: translate(0px, 0px) scale(1); }
+        }
+        .animate-blob {
+          animation: blob 7s infinite;
+        }
+        .animation-delay-2000 {
+          animation-delay: 2s;
+        }
+      `}</style>
+
             </div>
 
 
          
         </motion.div>
+
+
+</>
     );
 }
