@@ -3,6 +3,8 @@ export default function Footer(){
 
        <footer className="py-8 text-center opacity-60 text-sm">
 
+        {/* The function/method {new Date().getFullYear() displays the current working year, this aids
+        especially when the year ends, you dont need to edit the code again by placing the current year in!} */}
   <p>© {new Date().getFullYear()} WordFlow. Built with React & WebSockets.</p>
 
   <p className="mt-1">
