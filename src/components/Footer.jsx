@@ -7,7 +7,7 @@ export default function Footer(){
 
   <p className="mt-1">
     Developed by <span className="font-bold text-[--tertiary]">Karl Djansi</span> 
-    • Mentored by <a href="https://github.com/KelvCodes" className="hover:underline">KelvCodes</a>
+    • Mentored by <a href="https://github.com/KelvCodes" target="_blank" className="hover:underline">KelvCodes</a>
   </p>
 
 </footer>

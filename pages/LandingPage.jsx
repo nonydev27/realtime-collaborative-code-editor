@@ -1,7 +1,9 @@
+import {motion} from "framer-motion";
+
 export default function LandingPage() {
     return (
         /* Use 'style' for the CSS variable, 'className' for the layout */
-        <div 
+        <motion.div 
             className="flex min-h-screen items-center justify-center p-10" 
             style={{ backgroundColor: 'var(--bg-main)', color: 'var(--tertiary)' }}
         >
@@ -24,6 +26,6 @@ export default function LandingPage() {
                     Start Flowing
                 </button>
             </div>
-        </div>
+        </motion.div>
     );
 }
