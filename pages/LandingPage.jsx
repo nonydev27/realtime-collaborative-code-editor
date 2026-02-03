@@ -1,4 +1,5 @@
 import {animate, motion} from "framer-motion";
+import {Button} from "@headlessui/react";
 
 export default function LandingPage() {
     return (
@@ -34,6 +35,10 @@ export default function LandingPage() {
                     style={{ backgroundColor: 'var(--primary)', color: 'white' }}
                 >
                    create document
+                </button>
+
+                <button className="rounded bg-sky-600 px-4 py-2 text-sm text-white data-active:bg-sky-700 data-hover:bg-sky-500">
+
                 </button>
             </div>
 
