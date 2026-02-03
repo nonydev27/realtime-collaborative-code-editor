@@ -1,6 +1,4 @@
 import {animate, motion} from "framer-motion";
-import {useState} from 'react';
-
 
 export default function LandingPage() {
 
