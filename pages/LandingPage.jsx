@@ -24,7 +24,7 @@ export default function LandingPage() {
                 </p>
                 
                 <button 
-                    className="mt-8 px-8 py-3 m-2 font-bold transition-transform hover:scale-105 capitalize"
+                    className="mt-8 px-8 py-3 m-2 bg-sky-600 font-bold transition-transform hover:scale-105 capitalize"
                 >
                     open editor
                 </button>
