@@ -12,7 +12,7 @@ export default function LandingPage() {
                 >
                     WordFlow
                 </h1>
-                <p className="text-xl opacity-90 leading-relaxed">
+                <p className="text-xl opacity-90 leading-relaxed font-mono">
                     Where ideas synchronize in real-time. A high-performance 
                     collaborative workspace designed for seamless document engineering.
                 </p>
