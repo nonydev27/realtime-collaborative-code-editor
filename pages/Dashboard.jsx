@@ -42,7 +42,7 @@ export default function Dashboard() {
               <span>Title</span>
               <span>Last Opened</span>
             </div>
-            <div className="p-8 text-center text-gray-600">
+            <div className="p-8 h-screen text-center text-gray-600">
               No documents found in the database.
             </div>
           </div>
