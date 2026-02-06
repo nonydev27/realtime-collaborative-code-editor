@@ -4,7 +4,7 @@ export default function Dashboard(){
             <div className="dashboard">
                 <div className="flex flex-col flex-1 justify-between">
 
-                    <div className="col col-1">
+                    <div className="">
                     <button>Create New Document</button>
                     <a href="#">Home</a>
                     <a href="#">Recent</a>
