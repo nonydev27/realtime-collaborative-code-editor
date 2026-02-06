@@ -1,7 +1,7 @@
 export default function NotFound(){
     return(
         <>
-            <main className="h-screen w-full p-6 flex flex-col justify-center">
+            <main className="h-screen w-full p-24 flex flex-col justify-center">
                 
             <div className="">
                 <h2 className="text-9xl">Error 404</h2>
