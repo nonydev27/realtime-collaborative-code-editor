@@ -6,8 +6,8 @@ export default function Dashboard(){
                     <div className="col col-1">
                     <button>Create New Document</button>
                     <a href="#">Home</a>
-                    <a href="#">Home</a>
-                    <a href="#">Home</a>
+                    <a href="#">Recent</a>
+                    <a href="#">Open Existing Document</a>
                     <a href="#">Settings</a>
 
                     </div>
