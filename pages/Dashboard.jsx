@@ -6,6 +6,10 @@ export default function Dashboard(){
                     <div className="col col-1">
                     <button>Create New Document</button>
                     <a href="#">Home</a>
+                    <a href="#">Home</a>
+                    <a href="#">Home</a>
+                    <a href="#">Home</a>
+
                     </div>
 
                     <div className="col col-1">
