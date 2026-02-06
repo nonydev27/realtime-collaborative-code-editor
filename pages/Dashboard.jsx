@@ -13,7 +13,7 @@ export default function Dashboard(){
                     </div>
 
                     <div className="col col-1">
-
+                    <search>sup</search>
                     </div>
                 </div>
             </div>
