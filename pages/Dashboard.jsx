@@ -4,7 +4,7 @@ export default function Dashboard(){
             <div className="dashboard">
                 <div className="col col-2">
                     <div className="col col-1">
-
+                    <button>Create New Document</button>
                     </div>
 
                     <div className="col col-1">
