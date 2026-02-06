@@ -5,8 +5,6 @@ export default function NotFound(){
                 
             <div className="">
                 <h2 className="text-9xl">Error 404</h2>
-      
-
                 <p className="text-3xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis suscipit dolores eos sint nihil autem beatae blanditiis minima inventore consectetur ex animi, numquam dolore neque accusamus fugit error ipsam maiores.</p>
            </div>
             </main>
