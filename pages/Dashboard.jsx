@@ -8,7 +8,7 @@ export default function Dashboard(){
                     <a href="#">Home</a>
                     <a href="#">Home</a>
                     <a href="#">Home</a>
-                    <a href="#">Home</a>
+                    <a href="#">Settings</a>
 
                     </div>
 
