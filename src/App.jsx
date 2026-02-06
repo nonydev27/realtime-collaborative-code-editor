@@ -1,4 +1,6 @@
-import LandingPage from "../pages/LandingPage"  
+import LandingPage from "../pages/LandingPage"
+import NotFound from "../pages/NotFound";
+
 import Dashboard from "../pages/Dashboard";
 import Footer from "./components/Footer"
 import "./index.css"
@@ -9,9 +11,10 @@ function App() {
 
   return (
     <>
-    <Dashboard/>
+    {/* <Dashboard/> */}
      {/* <LandingPage/> */}
      {/* <Footer/> */}
+     <NotFound/>
     </>
   )
 }
