@@ -2,10 +2,10 @@ import Footer from "../src/components/Footer"
 export default function NotFound(){
     return(
         <>
-            <main className=" overflow-hidden w-full p-30 flex flex-col justify-center">
+            <main className="h-screen overflow-hidden w-full p-30 flex flex-col justify-center">
                 
             <div className="">
-                <h2 className="text-9xl">Error 404</h2>
+                <h2 className="text-9xl text-gray-500">Error 404</h2>
                 <p className="text-3xl"> Oops! We can't seem to find the page you're looking for. The page might have either been taken down or broken.</p>
            </div>
             </main>
