@@ -12,9 +12,9 @@ function App() {
   return (
     <>
     {/* <Dashboard/> */}
-     {/* <LandingPage/> */}
-     {/* <Footer/> */}
-     <NotFound/>
+     <LandingPage/>
+     {/* <Footer/>
+     <NotFound/> */}
     </>
   )
 }
