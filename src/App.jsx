@@ -11,10 +11,10 @@ function App() {
 
   return (
     <>
-    {/* <Dashboard/> */}
-     <LandingPage/>
-     {/* <Footer/>
-     <NotFound/> */}
+    <Dashboard/>
+     {/* <LandingPage/>
+     <Footer/> */}
+     {/* <NotFound/> */}
     </>
   )
 }
